@@ -2,6 +2,7 @@
   "name": "cybrlghtrs",
   "version": "0.1.0",
   "private": true,
+  "author": "Alex Davidson",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
