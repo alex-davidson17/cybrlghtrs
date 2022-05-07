@@ -78,11 +78,11 @@ export default function Home() {
           </div>
           <div className="h-60 w-auto p-4">
             <div className="h-5/6 w-auto bg-white">
-              <h2>🍓 welcome to cybr land u shills🍓</h2>
+              <h2>🍓 welcome to cybr land u shills 🍓</h2>
               <p>
                 we have a collection of 10,000 lghtrs to do what u please with.
               </p>
-              <p>we will mint when dev lets us please be patient.</p>
+              <p>we will mint when dev lets us please be patient 🔧</p>
             </div>
           </div>
         </div>
