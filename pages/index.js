@@ -7,6 +7,7 @@ export default function Home() {
     <div className="min-h-screen h-full w-full flex flex-col bg-light-green overflow-hidden">
       <Head>
         <title>Cybrlghtrs</title>
+        <meta charset="UTF-8" />
         <meta name="description" content="An NFT Project called Cybrlghtrs" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -61,6 +62,31 @@ export default function Home() {
           </nav>
         </div>
       </header>
+      <section className="m-5">
+        <div className="w-1/2 h-auto bg-gray-300">
+          <div className="bg-gradient-to-r from-light-blue via-light-purple to-light-yellow px-4">
+            <p>rugpull.exe</p>
+          </div>
+          <div>
+            <ul className="flex items-center space-x-4 md:space-x-6 px-4 overflow-hidden">
+              <li>File</li>
+              <li>Edit</li>
+              <li>View</li>
+              <li>Image</li>
+              <li>Options</li>
+            </ul>
+          </div>
+          <div className="h-60 w-auto p-4">
+            <div className="h-5/6 w-auto bg-white">
+              <h2>🍓 welcome to cybr land u shills🍓</h2>
+              <p>
+                we have a collection of 10,000 lghtrs to do what u please with.
+              </p>
+              <p>we will mint when dev lets us please be patient.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
