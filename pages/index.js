@@ -8,13 +8,15 @@ import {
   faX,
 } from "@fortawesome/free-solid-svg-icons";
 
+import { config } from "../cybr.config";
+
 export default function Home() {
   return (
     <div className="min-h-screen h-full w-full flex flex-col bg-light-green overflow-hidden">
       <Head>
-        <title>Cybrlghtrs</title>
+        <title>{config.title}</title>
         <meta charset="UTF-8" />
-        <meta name="description" content="An NFT Project called Cybrlghtrs" />
+        <meta name="description" content={config.description} />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -68,7 +70,7 @@ export default function Home() {
           </nav>
         </div>
       </header>
-      <section className="m-5">
+      <section className="m-5 flex justify-center items-center">
         <div className="w-1/2 h-auto bg-gray-300">
           <div className="h-8 bg-gradient-to-r from-light-blue via-light-purple to-light-yellow px-4 flex flex-row justify-between">
             <p>rugpull.exe</p>
@@ -93,7 +95,7 @@ export default function Home() {
               <li>Options</li>
             </ul>
           </div>
-          <div className="h-60 w-auto p-4">
+          <div className="h-60 w-auto p-4 text-center">
             <div className="h-5/6 w-auto bg-white">
               <h2>🍓 welcome to cybr land u shills 🍓</h2>
               <p>

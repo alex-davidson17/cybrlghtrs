@@ -17,6 +17,9 @@ module.exports = {
         "light-yellow": "#fcf6bd",
         pink: "#ff99c8",
       },
+      animation: {
+        "slow-pulse": "pulse 10s linear infinite",
+      },
     },
   },
   plugins: [],
