@@ -2,6 +2,7 @@
   "name": "cybrlghtrs",
   "version": "0.1.0",
   "private": true,
+  "author": "Alex Davidson",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +10,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.1.1",
+    "@fortawesome/free-solid-svg-icons": "^6.1.1",
+    "@fortawesome/react-fontawesome": "^0.1.18",
     "next": "12.1.6",
     "react": "18.1.0",
     "react-dom": "18.1.0"
