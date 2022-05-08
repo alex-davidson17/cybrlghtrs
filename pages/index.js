@@ -1,6 +1,12 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faWindowMinimize,
+  faWindowMaximize,
+  faX,
+} from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
   return (
@@ -24,7 +30,7 @@ export default function Home() {
                   <svg
                     className="w-6 h-6 md:w-8 md:h-8"
                     viewBox="0 0 90 90"
-                    fill="none"
+                    fill={"currentColor"}
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -64,8 +70,19 @@ export default function Home() {
       </header>
       <section className="m-5">
         <div className="w-1/2 h-auto bg-gray-300">
-          <div className="bg-gradient-to-r from-light-blue via-light-purple to-light-yellow px-4">
+          <div className="h-8 bg-gradient-to-r from-light-blue via-light-purple to-light-yellow px-4 flex flex-row justify-between">
             <p>rugpull.exe</p>
+            <ul className="flex flex-row items-center space-x-4">
+              <li className="bg-gray-300 flex w-4 h-4 items-center justify-center">
+                <FontAwesomeIcon icon={faWindowMinimize} className="h-2" />
+              </li>
+              <li className="bg-gray-300 flex w-4 h-4 items-center justify-center">
+                <FontAwesomeIcon icon={faWindowMaximize} className="h-2" />
+              </li>
+              <li className="bg-gray-300 flex w-4 h-4 items-center justify-center">
+                <FontAwesomeIcon icon={faX} className="h-2" />
+              </li>
+            </ul>
           </div>
           <div>
             <ul className="flex items-center space-x-4 md:space-x-6 px-4 overflow-hidden">
