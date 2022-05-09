@@ -36,6 +36,7 @@ export default function Mint() {
               <li>View</li>
               <li>Image</li>
               <li>Options</li>
+              <li>Fake</li>
             </ul>
           </div>
           <div className="h-full w-auto p-4 text-center">
