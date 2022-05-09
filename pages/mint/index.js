@@ -51,7 +51,7 @@ export default function Mint() {
           </div>
           <div className="h-full w-auto p-4 text-center">
             <div className="h-5/6 w-auto bg-white overflow-hidden">
-              <h2 className="text-6xl font-bold mx-4">Presale</h2>
+              <h2 className="text-5xl font-bold mt-4">Presale</h2>
               <div className="flex flex-col md:flex-row md:space-x-14 w-full mt-10 md:mt-14">
                 <div className="relative">
                   <div className="absolute top-2 left-2 opacity-80 filter backdrop-blur-lg text-base px-4 py-2 bg-black border border-brand-purple rounded-md flex items-center justify-center text-white font-semibold">
@@ -66,7 +66,7 @@ export default function Mint() {
                   />
                 </div>
                 <div className="flex flex-col items-center justify-center md:w-1/2">
-                  <div className="flex flex-row">
+                  <div className="flex flex-row space-x-10">
                     <button onClick={decreaseMint}>
                       <FontAwesomeIcon
                         icon={faMinus}
