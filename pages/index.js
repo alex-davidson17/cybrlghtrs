@@ -12,7 +12,7 @@ import { config } from "../cybr.config";
 
 export default function Home() {
   return (
-    <div className="min-h-screen h-full w-full flex flex-col bg-light-green overflow-hidden">
+    <div className="min-h-screen h-full w-full flex flex-col bg-gradient-to-r from-light-green to-green-200 overflow-hidden">
       <Head>
         <title>{config.title}</title>
         <meta charset="UTF-8" />
@@ -96,12 +96,17 @@ export default function Home() {
             </ul>
           </div>
           <div className="h-60 w-auto p-4 text-center">
-            <div className="h-5/6 w-auto bg-white">
-              <h2>🍓 welcome to cybr land u shills 🍓</h2>
+            <div className="h-5/6 w-auto bg-white  space-y-4 ">
+              <h2 className="text-2xl">🍓 welcome to cybr land u shills 🍓</h2>
               <p>
                 we have a collection of 10,000 lghtrs to do what u please with.
               </p>
               <p>we will mint when dev lets us please be patient 🔧</p>
+              <div>
+                <Link href="/mint">
+                  <a className="bg-pink rounded-md px-4 py-2">Begin mint</a>
+                </Link>
+              </div>
             </div>
           </div>
         </div>
