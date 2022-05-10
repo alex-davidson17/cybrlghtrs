@@ -15,20 +15,13 @@ import {
 export default function Mint() {
   const [mintNum, setMintNum] = useState(1);
   const [maxMint, setMaxMint] = useState(22);
-  const [totalMint, setTotalMint] = useState(0.0333);
+
   const increaseMint = () => {
-    if (mintNum < maxMint) {
-      setMintNum(mintNum + 1);
-      setTotalMint(mintNum * 0.0333);
-    }
+    if (mintNum < maxMint) setMintNum(mintNum + 1);
   };
   const decreaseMint = () => {
-    if (mintNum > 1) {
-      setMintNum(mintNum - 1);
-      setTotalMint(mintNum * 0.0333);
-    }
+    if (mintNum > 1) setMintNum(mintNum - 1);
   };
-  console.log(mintNum);
   return (
     <div class="min-h-screen h-full w-full flex flex-col bg-gradient-to-r from-cyan-500 to-blue-500">
       <section className="m-5 flex justify-center items-center">
@@ -94,9 +87,11 @@ export default function Mint() {
                   <button className="bg-light-green rounded-md px-4 py-2 my-4">
                     Connect Wallet
                   </button>
-                  <div>
+                  <div className="flex w-full justify-between">
                     <p>Total Price</p>
-                    <p>{totalMint} + GAS</p>
+                    <p>
+                      {Number.parseFloat(0.033 * mintNum).toFixed(3)} ETH
+                    </p>{" "}
                   </div>
                 </div>
               </div>
