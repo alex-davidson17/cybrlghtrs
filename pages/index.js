@@ -74,7 +74,7 @@ export default function Home() {
         <div className="w-1/2 h-auto bg-gray-300">
           <div className="h-8 bg-gradient-to-r from-light-blue via-light-purple to-light-yellow px-4 flex flex-row justify-between">
             <p>rugpull.exe</p>
-            <ul className="flex flex-row items-center space-x-80">
+            <ul className="flex flex-row items-center space-x-4">
               <li className="bg-gray-300 flex w-4 h-4 items-center justify-center">
                 <FontAwesomeIcon icon={faWindowMinimize} className="h-2" />
               </li>

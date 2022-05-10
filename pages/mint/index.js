@@ -15,11 +15,18 @@ import {
 export default function Mint() {
   const [mintNum, setMintNum] = useState(1);
   const [maxMint, setMaxMint] = useState(22);
+  const [totalMint, setTotalMint] = useState(0.0333);
   const increaseMint = () => {
-    if (mintNum < maxMint) setMintNum(mintNum + 1);
+    if (mintNum < maxMint) {
+      setMintNum(mintNum + 1);
+      setTotalMint(mintNum * 0.0333);
+    }
   };
   const decreaseMint = () => {
-    if (mintNum > 1) setMintNum(mintNum - 1);
+    if (mintNum > 1) {
+      setMintNum(mintNum - 1);
+      setTotalMint(mintNum * 0.0333);
+    }
   };
   console.log(mintNum);
   return (
@@ -87,6 +94,10 @@ export default function Mint() {
                   <button className="bg-light-green rounded-md px-4 py-2 my-4">
                     Connect Wallet
                   </button>
+                  <div>
+                    <p>Total Price</p>
+                    <p>{totalMint} + GAS</p>
+                  </div>
                 </div>
               </div>
             </div>
